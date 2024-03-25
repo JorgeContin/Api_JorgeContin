@@ -1,0 +1,31 @@
+<script src="js/lolapi.js"></script>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Buscador de Invocador - League of Legends</title>
+
+</head>
+<body>
+
+    window.onload = function() {
+        var hashParams = window.location.hash.substring(1).split("#");
+        var nameAcc = hashParams[0];
+        var level = hashParams[1];
+        var idAcc = hashParams[2];
+        var tier = hashParams[3];
+        var rank = hashParams[4];
+        var wins = hashParams[5];
+        var loses = hashParams[6];
+    
+        console.log("Nombre: " + nameAcc);
+        console.log("Nivel: " + level);
+        console.log("ID de Invocador: " + idAcc);
+        console.log("Tier: " + tier);
+        console.log("Rank: " + rank);
+        console.log("Victorias: " + wins);
+        console.log("Derrotas: " + loses);
+    };
+</body>
+</html>
